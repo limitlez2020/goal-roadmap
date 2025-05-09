@@ -39,7 +39,7 @@ export default function Home() {
 
       
       {/* Body Container: */}
-      <div className="flex flex-col w-8/10 items-center text-[#e6e5de] gap-32">
+      <div className="flex flex-col w-9/10 sm:w-8/10 items-center text-[#e6e5de] gap-32">
        
         {/* Hero: */}
         <div className="flex flex-col w-full items-center">
