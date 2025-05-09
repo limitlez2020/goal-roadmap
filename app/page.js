@@ -174,7 +174,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col">
                 <p className={`${jetbrains_mono.className} uppercase text-lg font-bold`}>Visual Progress Dashboard</p>
-                <p className="text-base">See how far you've come with intuitive charts and indicators</p>
+                <p className="text-base">See how far you&apos;ve come with intuitive charts and indicators</p>
               </div>
             </div>
 
