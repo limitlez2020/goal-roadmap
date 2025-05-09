@@ -40,6 +40,7 @@ export default function Home() {
       
       {/* Body Container: */}
       <div className="flex flex-col w-8/10 items-center text-[#e6e5de] gap-32">
+       
         {/* Hero: */}
         <div className="flex flex-col w-full items-center">
           {/* News */}
@@ -50,13 +51,13 @@ export default function Home() {
           </div>
 
           {/* Header */}
-          <div className={`${anton.className} flex flex-col items-center text-center text-7xl uppercase mb-4`}>
+          <div className={`${anton.className} flex flex-col items-center text-center text-6xl sm:text-7xl uppercase mb-4`}>
             <p> Gamify Your Goals</p>
             <p> Level Up Your Life </p>
           </div>
 
           {/* Subheading */}
-          <div className={`flex flex-col w-1/2 items-center text-center text-base md:text-lg mb-8`}>
+          <div className={`flex flex-col items-center text-center text-base md:text-lg mb-8`}>
             <p>Turn goal-setting from a chore into the</p>
             <p>most engaging and rewarding game.</p>
           </div>
@@ -119,7 +120,7 @@ export default function Home() {
         {/* Features: */}
         <div className="flex flex-col w-full justify-center items-center mt-12">
           <p className={`${anton.className} text-5xl uppercase`}>Our Features</p>
-          <p className="">check out our amazing features</p>
+          <p>check out our amazing features</p>
 
           <div className="flex flex-row flex-wrap relative justify-center w-full mt-10 py-10 px-5 gap-6">
             {/* 1. */}
