@@ -125,7 +125,7 @@ export default function Home() {
           <div className="flex flex-row flex-wrap relative justify-center w-full mt-10 py-10 px-5 gap-6">
             {/* 1. */}
             <div className="flex flex-row bg-[#E7E6DF]/10 py-3 px-5 rounded-md gap-4 w-140">
-              <div className="flex size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
+              <div className="flex min-w-6 size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
                 <FaArrowRight className="size-3 text-green-400"/>
               </div>
               <div className="flex flex-col">
@@ -136,7 +136,7 @@ export default function Home() {
 
             {/* 2. */}
             <div className="flex flex-row bg-[#E7E6DF]/10 py-3 px-5 rounded-md gap-4 w-140">
-              <div className="flex size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
+              <div className="flex min-w-6 size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
                 <FaArrowRight className="size-3 text-green-400"/>
               </div>
               <div className="flex flex-col">
@@ -147,7 +147,7 @@ export default function Home() {
 
             {/* 3. */}
             <div className="flex flex-row bg-[#E7E6DF]/10 py-3 px-5 rounded-md gap-4 w-140">
-              <div className="flex size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
+              <div className="flex min-w-6 size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
                 <FaArrowRight className="size-3 text-green-400"/>
               </div>
               <div className="flex flex-col">
@@ -158,7 +158,7 @@ export default function Home() {
 
             {/* 4. */}
             <div className="flex flex-row bg-[#E7E6DF]/10 py-3 px-5 rounded-md gap-4 w-140">
-              <div className="flex size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
+              <div className="flex min-w-6 size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
                 <FaArrowRight className="size-3 text-green-400"/>
               </div>
               <div className="flex flex-col">
@@ -169,7 +169,7 @@ export default function Home() {
 
             {/* 5. */}
             <div className="flex flex-row bg-[#E7E6DF]/10 py-3 px-5 rounded-md gap-4 w-140">
-              <div className="flex size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
+              <div className="flex min-w-6 size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
                 <FaArrowRight className="size-3 text-green-400"/>
               </div>
               <div className="flex flex-col">
@@ -180,7 +180,7 @@ export default function Home() {
 
             {/* 6. */}
             <div className="flex flex-row bg-[#E7E6DF]/10 py-3 px-5 rounded-md gap-4 w-140">
-              <div className="flex size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
+              <div className="flex min-w-6 size-6 justify-center items-center border border-neutral-900 bg-neutral-800 rounded-sm mt-1">
                 <FaArrowRight className="size-3 text-green-400"/>
               </div>
               <div className="flex flex-col">
