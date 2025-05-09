@@ -51,7 +51,7 @@ export default function Home() {
           </div>
 
           {/* Header */}
-          <div className={`${anton.className} flex flex-col items-center text-center text-6xl sm:text-7xl uppercase mb-4`}>
+          <div className={`${anton.className} flex flex-col items-center text-center text-5xl sm:text-6xl md:text-7xl uppercase mb-4`}>
             <p> Gamify Your Goals</p>
             <p> Level Up Your Life </p>
           </div>
@@ -95,22 +95,22 @@ export default function Home() {
           {/* Right side: */}
           <div className="flex flex-row flex-wrap gap-x-20 gap-y-10 justify-center items-center">
             <div className="flex flex-col gap-2 justify-center items-center">
-              <p className={`${anton.className} text-7xl`}>100%</p>
+              <p className={`${anton.className} text-6xl md:text-7xl`}>100%</p>
               <p className={`${jetbrains_mono.className} uppercase font-bold text-sm`}>clear roadmap</p>
             </div>
 
             <div className="flex flex-col gap-2 justify-center items-center">
-              <p className={`${anton.className} text-7xl`}>+50%</p>
+              <p className={`${anton.className} text-6xl md:text-7xl`}>+50%</p>
               <p className={`${jetbrains_mono.className} uppercase font-bold text-sm`}>increased motivation</p>
             </div>
 
             <div className="flex flex-col gap-2 justify-center items-center">
-              <p className={`${anton.className} text-7xl`}>Daily</p>
+              <p className={`${anton.className} text-6xl md:text-7xl`}>Daily</p>
               <p className={`${jetbrains_mono.className} uppercase font-bold text-sm`}>Progress Tracking</p>
             </div>
 
             <div className="flex flex-col gap-2 justify-center items-center">
-              <p className={`${anton.className} text-7xl`}>10x</p>
+              <p className={`${anton.className} text-6xl md:text-7xl`}>10x</p>
               <p className={`${jetbrains_mono.className} uppercase font-bold text-sm`}>more achievements</p>
             </div>
           </div>
