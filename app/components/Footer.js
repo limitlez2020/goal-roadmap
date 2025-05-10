@@ -15,16 +15,16 @@ export default function Footer () {
     >
       {/* Lines */}
       <div className="flex flex-row justify-center items-center h-full gap-2">
-        <div className="w-3 h-16 rotate-25 bg-neutral-900"/>
-        <div className="w-3 h-16 rotate-25 bg-neutral-900"/>
+        <div className="w-3 h-16 rotate-25 bg-neutral-900/85"/>
+        <div className="w-3 h-16 rotate-25 bg-neutral-900/85"/>
       </div>
 
       <p className="lowercase text-xs font-medium"> copyright @ 2025 </p>
 
       {/* Lines */}
       <div className="flex flex-row justify-center items-center h-full gap-2">
-        <div className="w-3 h-16 rotate-25 bg-neutral-900"/>
-        <div className="w-3 h-16 rotate-25 bg-neutral-900"/>
+        <div className="w-3 h-16 rotate-25 bg-neutral-900/85"/>
+        <div className="w-3 h-16 rotate-25 bg-neutral-900/85"/>
       </div>
     </div>
   )
