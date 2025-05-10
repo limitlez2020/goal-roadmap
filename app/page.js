@@ -37,25 +37,37 @@ const jetbrains_mono = JetBrains_Mono({
 /* Testimonials */
 const testimonials = [
   {
-    testimony: `I've started using Koyeb GPUs to accelerate Mivlus indexing and
-              improve search performance. The developer experience is amazing—this
-              has become my go-to platform for all my projects.`,
-    name: "Stephen Bernard",
-    occupation: "Life Coach"
+    testimony: `Goal Quest completely changed how I approach my personal projects.
+              Breaking down goals into steps with the roadmap feature makes
+              everything feel achievable. Seeing my progress visually and
+              earning points keeps me incredibly motivated!`,
+    name: "Sarah Chen",
+    occupation: "Graphic Designer"
   },
   {
-    testimony: `From deploying web apps to AI agents, Koyeb allows us to build and
-                iterate quickly without having to worry about the infrastructure.
-                No infrastructure to manage, no servers to provision.`,
-    name: "Jenny Pekins",
-    occupation: "Developer"
+    testimony: `I used to struggle with follow-through, but the gamification
+              aspect of Goal Quest is a game-changer. Earning badges and
+              hitting streaks actually makes working on my goals fun. It's like
+              my own personal achievement system.`,
+    name: "David Lee",
+    occupation: "Marketing Specialist"
   },
   {
-    testimony: `Koyeb folks are providing a great service. Super easy to get started,
-                run unmodified applications... and works great with Turso!`,
-    name: "Justin Blake",
-    occupation: "Founder"
+    testimony: `Finally, an app that makes planning simple and exciting!
+              Generating a clear roadmap for my fitness goals took minutes,
+              and marking steps complete feels genuinely rewarding. Highly recommend
+              for anyone serious about turning plans into action.`,
+    name: "Maria Garcia",
+    occupation: "Project Manager"
   },
+  {
+    testimony: `As a student juggling multiple ambitions, Goal Quest helps me
+              keep everything organized and stay on track. The visual progress
+              and the little hits of dopamine from completing tasks make a huge
+              difference in my consistency.`,
+    name: "Omar Hassan",
+    occupation: "University Student"
+  }
 ]
 
 
