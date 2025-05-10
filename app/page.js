@@ -119,11 +119,11 @@ export default function Home() {
 
           {/* CTA: */}
           <div className="relative w-44">
-            <button className={`${jetbrains_mono.className} relative z-10 flex flex-row items-center justify-center gap-1 w-full py-3 text-base font-bold bg-green-400 text-neutral-900 rounded-sm hover:gap-0 transition-all ease-in-out duration-200 cursor-pointer`}>
+            <Link href={"/coming-soon"} className={`${jetbrains_mono.className} relative z-10 flex flex-row items-center justify-center gap-1 w-full py-3 text-base font-bold bg-green-400 text-neutral-900 rounded-sm hover:gap-0 transition-all ease-in-out duration-200 cursor-pointer`}>
               <IoMdArrowDropright className="size-5"/>
               <p>Get Started</p>
               <IoMdArrowDropleft className="size-5"/>
-            </button>
+            </Link>
             {/* Shadow */}
             <div className="absolute w-full z-0 bg-green-900 top-1 left-1 right-0 bottom-0 h-12 rounded-sm"/>
           </div>
@@ -140,11 +140,11 @@ export default function Home() {
               <p className="text-3xl">Benefits</p>
             </div>
             {/* button */}
-            <button className="flex flex-row justify-center items-center gap-1 hover:gap-0 hover:text-green-400 cursor-pointer">
+            <Link href={"/coming-soon"} className="flex flex-row justify-center items-center gap-1 hover:gap-0 hover:text-green-400 cursor-pointer">
               <IoMdArrowDropright className="size-3"/>
               get started
               <IoMdArrowDropleft className="size-3"/>
-            </button>
+            </Link>
           </div>
 
           {/* Right side: */}
