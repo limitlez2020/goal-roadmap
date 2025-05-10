@@ -304,7 +304,7 @@ export default function Home() {
           {/* Message */}
           <div className={`${jetbrains_mono.className} flex flex-row w-full items-center justify-center`}>
             <IoMdArrowDropright className="size-5"/>
-            <p className="uppercase text-sm font-bold">Real reviews coming soon</p>
+            <p className="uppercase text-sm font-bold">more reviews coming soon</p>
             <IoMdArrowDropleft className="size-5"/>
           </div>
         </div>
