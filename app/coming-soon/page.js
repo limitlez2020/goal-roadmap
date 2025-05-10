@@ -13,7 +13,7 @@ export default function ComingSoon () {
 
 
   return (
-    <div className="relative w-full border min-h-screen flex flex-col items-center justify-between bg-neutral-900 text-neutral-300">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-between bg-neutral-900 text-neutral-300">
       {/* Background Noise Texture: */}
       <div className='absolute inset-0 opacity-5 bg-[url("/noise.png")] pointer-events-none'/>
 

@@ -279,11 +279,11 @@ export default function Home() {
 
           {/* Buttons */}
           <div className="flex flex-row w-full items-center justify-between gap-10">
-            <button className="flex border-neutral-600 border-2 bg-neutral-800 p-4 cursor-pointer rounded-sm hover:bg-neutral-800/80"
+            <button className="flex border-neutral-700 border-2 bg-neutral-800 p-4 cursor-pointer rounded-sm hover:bg-neutral-800/80"
                     onClick={handlePrev}>
               <IoIosArrowBack className="size-5"/>
             </button>
-            <button className="flex border-neutral-600 border-2 bg-neutral-800 p-4 cursor-pointer rounded-sm hover:bg-neutral-800/80"
+            <button className="flex border-neutral-700 border-2 bg-neutral-800 p-4 cursor-pointer rounded-sm hover:bg-neutral-800/80"
                     onClick={handleNext}>
               <IoIosArrowForward className="size-5"/>
             </button>
