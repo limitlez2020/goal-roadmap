@@ -1,13 +1,16 @@
 /*** Landing Page ***/
+"use client"
 
 import Link from "next/link";
 import { Bodoni_Moda_SC, Press_Start_2P, Poppins, Anton, JetBrains_Mono } from "next/font/google";
-import { IoMdArrowDropright, IoMdArrowDropleft } from "react-icons/io";
+import { IoMdArrowDropright, IoMdArrowDropleft, IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { GrAnnounce } from "react-icons/gr";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import { useState } from "react";
+
 
 const bodoni_moda_sc = Bodoni_Moda_SC({
   subsets: ["latin"]
@@ -28,7 +31,59 @@ const jetbrains_mono = JetBrains_Mono({
   subsets: ["latin"]
 })
 
+
+
+
+/* Testimonials */
+const testimonials = [
+  {
+    testimony: `I've started using Koyeb GPUs to accelerate Mivlus indexing and
+              improve search performance. The developer experience is amazing—this
+              has become my go-to platform for all my projects.`,
+    name: "Stephen Bernard",
+    occupation: "Life Coach"
+  },
+  {
+    testimony: `From deploying web apps to AI agents, Koyeb allows us to build and
+                iterate quickly without having to worry about the infrastructure.
+                No infrastructure to manage, no servers to provision.`,
+    name: "Jenny Pekins",
+    occupation: "Developer"
+  },
+  {
+    testimony: `Koyeb folks are providing a great service. Super easy to get started,
+                run unmodified applications... and works great with Turso!`,
+    name: "Justin Blake",
+    occupation: "Founder"
+  },
+]
+
+
+
+
+
 export default function Home() {
+
+  /* To move through the testimonials */
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  /* Move to next testimonial */
+  const handleNext = () => {
+    setCurrentIndex((currentIndex + 1) % testimonials.length)
+  }
+
+  /* Move to prev testimonial */
+  const handlePrev = () => {
+    if (currentIndex === 0) {
+      setCurrentIndex(testimonials.length - 1)
+    }
+    else {
+      setCurrentIndex(currentIndex - 1)
+    }
+  }
+
+
+
   return (
     <div className="relative w-full min-h-screen flex flex-col items-center bg-neutral-900 text-neutral-300">
       {/* Background Noise Texture: */}
@@ -190,12 +245,53 @@ export default function Home() {
             </div>
 
 
-
             {/* Border */}
             <div className="absolute size-3 top-0 left-0 border-green-400 border-b border-r"/>
             <div className="absolute size-3 top-0 right-0 border-green-400 border-b border-l"/>
             <div className="absolute size-3 bottom-0 left-0 border-green-400 border-t border-r"/>
             <div className="absolute size-3 bottom-0 right-0 border-green-400 border-t border-l"/>
+          </div>
+        </div>
+
+
+
+        {/* Testimonials */}
+        <div className="flex flex-col w-full gap-10 mb-10">
+          {/* Top: */}
+          <div className="flex flex-col w-full justify-center items-center gap-10 px-5 py-8 mt-10 bg-neutral-700/20 uppercase rounded-md">
+            <p className={`${jetbrains_mono.className}`}>/What our customers say</p>
+            
+            {/* Customer Reviews: */}
+            <div className="flex flex-col items-center justify-center gap-7">
+              {/* Testimony */}
+              <p className={`${anton.className} text-2xl text-center`}>{testimonials[currentIndex].testimony}</p>
+              {/* Person */}
+              <div className="flex flex-row gap-3">
+                <div className="size-7 rounded-full bg-amber-400"></div>
+                {/* name + occupation */}
+                <div className={`${jetbrains_mono.className} flex flex-col text-xs`}>
+                  <p>{testimonials[currentIndex].name}</p>
+                  <p className="font-bold text-neutral-400">{testimonials[currentIndex].occupation}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Buttons */}
+          <div className="flex flex-row w-full items-center justify-between gap-10">
+            <button className="flex border p-4 cursor-pointer rounded-sm" onClick={handlePrev}>
+              <IoIosArrowBack className="size-5"/>
+            </button>
+            <button className="flex border p-4 cursor-pointer rounded-sm" onClick={handleNext}>
+              <IoIosArrowForward className="size-5"/>
+            </button>
+          </div>
+
+          {/* Message */}
+          <div className={`${jetbrains_mono.className} flex flex-row w-full items-center justify-center`}>
+            <IoMdArrowDropright className="size-5"/>
+            <p className="uppercase text-sm font-bold">Real reviews coming soon</p>
+            <IoMdArrowDropleft className="size-5"/>
           </div>
         </div>
       </div>
