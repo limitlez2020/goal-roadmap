@@ -229,7 +229,7 @@ export default function Home() {
                 <FaArrowRight className="size-3 text-green-400"/>
               </div>
               <div className="flex flex-col">
-                <p className={`${jetbrains_mono.className} uppercase text-lg font-bold`}>Engaging Gamififation System</p>
+                <p className={`${jetbrains_mono.className} uppercase text-lg font-bold`}>Engaging Gamification System</p>
                 <p className="text-base">Earn points, unlock badges, and build streaks as you achieve</p>
               </div>
             </div>
