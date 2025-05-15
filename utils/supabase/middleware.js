@@ -41,6 +41,8 @@ export async function updateSession(request) {
   const publicPaths = [
     "/",
     "/login",
+    "/signup",
+    "/auth/confirm",
     "/coming-soon",
     "/error",
   ]
@@ -49,11 +51,12 @@ export async function updateSession(request) {
 
   /* No user and the current path is not a public path */
   if (!user && !isPublicPath) {
-    // no user, potentially respond by redirecting the user to the login page
+    // no user, respond by redirecting the user to the landing page
     const url = request.nextUrl.clone()
     url.pathname = '/'
     return NextResponse.redirect(url)
   }
+
 
   // IMPORTANT: You *must* return the supabaseResponse object as it is.
   // If you're creating a new response object with NextResponse.next() make sure to:

@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { login } from './actions'
 import { Anton, JetBrains_Mono } from 'next/font/google'
+import { signup } from './actions'
+import Link from 'next/link'
 
 const anton = Anton({
   subsets: ["latin"],
@@ -19,12 +19,17 @@ export default function LoginPage() {
 
       {/* Header */}
       <div className="flex flex-col items-center justify-center gap-1 mb-7">
-        <h1 className={`${anton.className} text-4xl font-bold uppercase`}>Welcome back</h1>
-        <p className="text-sm mb-5">sign in to continue to your account</p>
+        <h1 className={`${anton.className} text-4xl font-bold uppercase`}>Hello There</h1>
+        <p className="text-sm mb-5">let&apos;s create to your account</p>
       </div>
 
       {/* Form Container: */}
       <form className="flex flex-col items-start justify-start w-1/2">
+        <div className='flex flex-row w-full items-center justify-between gap-2 mb-5'>
+          <label htmlFor="email">Name:</label>
+          <input className="w-full ml-9 py-1 px-2 bg-neutral-700/40 border border-neutral-400 border-dashed rounded-xs" id="name" name="name" type="name" required />
+        </div>
+
         <div className='flex flex-row w-full items-center justify-between gap-2 mb-5'>
           <label htmlFor="email">Email:</label>
           <input className="w-full ml-10 py-1 px-2 bg-neutral-700/40 border border-neutral-400 border-dashed rounded-xs" id="email" name="email" type="email" required />
@@ -36,13 +41,13 @@ export default function LoginPage() {
         </div>
 
         <button className="w-full bg-green-400 text-neutral-900 font-bold p-1 rounded-sm mt-5 mb-2"
-                formAction={login}>
-          Log in
+                formAction={signup}>
+          Sign up
         </button>
 
         <div className="flex flex-row w-full gap-2 text-sm items-center justify-center">
-          <p className="">Don&apos;t have an account?</p>
-          <Link href={"/signup"} className="text-green-300">Sign up</Link>
+          <p className="">Already have an account?</p>
+          <Link href={"/login"} className="text-green-300">Log in</Link>
         </div>
       </form>
     </div>
