@@ -41,7 +41,7 @@ export async function updateSession(request) {
   const publicPaths = [
     "/",
     "/login",
-    "coming-soon",
+    "/coming-soon",
     "/error",
   ]
 
