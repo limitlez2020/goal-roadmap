@@ -24,7 +24,7 @@ export default function LoginPage() {
       </div>
 
       {/* Form Container: */}
-      <form className="flex flex-col items-start justify-start w-1/2">
+      <form className="flex flex-col items-start justify-start w-2/3 md:w-1/2">
         <div className='flex flex-col w-full justify-between gap-1 mb-5'>
           <label htmlFor="email" className="text-sm">Name:</label>
           <input className="w-full py-1 px-2 bg-neutral-700/40 border border-neutral-400 border-dashed rounded-xs" id="name" name="name" type="name" required />
