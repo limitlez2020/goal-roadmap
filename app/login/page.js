@@ -33,6 +33,7 @@ export default function LoginPage() {
         <div className="flex flex-col w-full justify-between gap-1 mb-5">
           <label htmlFor="password" className="text-sm">Password:</label>
           <input className="w-full py-1 px-2 border bg-neutral-700/40 border-neutral-400 border-dashed rounded-sm" id="password" name="password" type="password" required />
+          <p className="flex text-xs self-end text-orange-200 hover:underline cursor-pointer">forgot password?</p>
         </div>
 
         <button className="w-full bg-green-400 text-neutral-900 font-bold p-1 rounded-sm mt-5 mb-2"
