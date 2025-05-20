@@ -25,19 +25,19 @@ export default function LoginPage() {
 
       {/* Form Container: */}
       <form className="flex flex-col items-start justify-start w-1/2">
-        <div className='flex flex-row w-full items-center justify-between gap-2 mb-5'>
-          <label htmlFor="email">Name:</label>
-          <input className="w-full ml-9 py-1 px-2 bg-neutral-700/40 border border-neutral-400 border-dashed rounded-xs" id="name" name="name" type="name" required />
+        <div className='flex flex-col w-full justify-between gap-1 mb-5'>
+          <label htmlFor="email" className="text-sm">Name:</label>
+          <input className="w-full py-1 px-2 bg-neutral-700/40 border border-neutral-400 border-dashed rounded-xs" id="name" name="name" type="name" required />
         </div>
 
-        <div className='flex flex-row w-full items-center justify-between gap-2 mb-5'>
-          <label htmlFor="email">Email:</label>
-          <input className="w-full ml-10 py-1 px-2 bg-neutral-700/40 border border-neutral-400 border-dashed rounded-xs" id="email" name="email" type="email" required />
+        <div className='flex flex-col w-full justify-between gap-1 mb-5'>
+          <label htmlFor="email" className="text-sm">Email:</label>
+          <input className="w-full py-1 px-2 bg-neutral-700/40 border border-neutral-400 border-dashed rounded-xs" id="email" name="email" type="email" required />
         </div>
 
-        <div className="flex flex-row w-full items-center justify-between gap-2 mb-5">
-          <label htmlFor="password">Password:</label>
-          <input className="w-full ml-2 py-1 px-2 border bg-neutral-700/40 border-neutral-400 border-dashed rounded-sm" id="password" name="password" type="password" required />
+        <div className="flex flex-col w-full justify-between gap-1 mb-5">
+          <label htmlFor="password" className="text-sm">Password:</label>
+          <input className="w-full py-1 px-2 border bg-neutral-700/40 border-neutral-400 border-dashed rounded-sm" id="password" name="password" type="password" required />
         </div>
 
         <button className="w-full bg-green-400 text-neutral-900 font-bold p-1 rounded-sm mt-5 mb-2"
